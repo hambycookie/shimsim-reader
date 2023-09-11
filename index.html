@@ -4,40 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Random ShimSim</title>
+  <title>ShimSim Reader</title>
 </head>
 <body>
   <main class="container">
-    <h1>Random ShimSim</h1>
-    <div class="chapter-select">
-      <div class="select-container">
-        <p>From</p>
-        <label for="from-vol">Vol.</label>
-        <select name="from-vol" id="from-vol">
-          <option value=""></option>
-          <option value="1">1</option>
-        </select>
-        <label for="from-ch">Ch.</label>
-        <select name="from-ch" id="from-ch">
-          <option value=""></option>
-          <option value="1">1</option>
-        </select>
-      </div>
-      <div class="select-container">
-        <p>To</p>
-        <label for="to-vol">Vol.</label>
-        <select name="to-vol" id="to-vol">
-          <option value=""></option>
-          <option value="1">1</option>
-        </select>
-        <label for="to-ch">Ch.</label>
-        <select name="to-ch" id="to-ch">
-          <option value=""></option>
-          <option value="1">1</option>
-        </select>
-      </div>
+    <h1>ShimSim Reader</h1>
+    <div class="center">
+      <label for="vol">Vol.</label>
+      <select name="vol" id="vol-select">
+        <option value="0" selected>0</option>
+        <option value="1">1</option>
+      </select>
+      <label for="ch">Ch.</label>
+      <select name="ch" id="ch-select">
+        <option value="1">1</option>
+      </select>
     </div>
-    <button>Gimme</button>
+    <div id="reader">
+      <button id="next-pg"><</button>
+      <img id="page-display" src="images/vol-1-cover.jpg"/>
+      <button id="prev-pg">></button>
+    </div>
+    <div class="center">
+      <button>Save</button>
+    </div>
   </main>
 </body>
 </html>

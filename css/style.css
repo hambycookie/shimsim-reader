@@ -2,7 +2,6 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 .container {
-  width: 60%;
   margin: auto;
   background-color:rgb(236, 236, 236);
 }
@@ -11,21 +10,30 @@ h1 {
   text-align: center;
 }
 
-.select-container {
-  padding: 1em;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  gap: 10px;
+}
+
+img {
+  max-height: 80vh;
+  max-width: 70vw;
+}
+button {
+  padding: 0.7rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .chapter-select {
-    display: flex;
-    flex-direction: column;
-  }
-
 }
 
 @media only screen and (min-width: 600px) {
-  .chapter-select {
-    display:flex;
-    justify-content: space-evenly;
-  }
 }
