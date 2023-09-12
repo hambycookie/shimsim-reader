@@ -4,23 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="js/script.js"></script>
   <title>ShimSim Reader</title>
 </head>
 <body>
   <main class="container">
     <h1>ShimSim Reader</h1>
     <div class="center">
-      <label for="vol">Vol.</label>
-      <select name="vol" id="vol-select">
-        <option value="0" selected>0</option>
-        <option value="1">1</option>
-      </select>
       <label for="ch">Ch.</label>
       <select name="ch" id="ch-select">
         <option value="1">1</option>
       </select>
+      <button id="go-btn">Go</button>
     </div>
     <div id="reader">
       <button id="next-pg"><</button>
@@ -31,5 +25,6 @@
       <button>Save</button>
     </div>
   </main>
+  <script src="js/script.js"></script>
 </body>
 </html>
